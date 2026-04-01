@@ -35,9 +35,9 @@ const App = () => {
     <Toaster />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path='app' element={<Layout />}>
+        <Route path='/app' element={<Layout />}>
          <Route index element={<Dashboard />}/>
-         <Route path='builder/:resumeId' element={<ResumeBuilder />}/>
+         <Route path='/app/builder/:resumeId' element={<ResumeBuilder />}/>
 
         </Route>
         <Route path='view/:resumeId' element={<Preview/>}/>
